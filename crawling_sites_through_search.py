@@ -14,7 +14,7 @@ def setting_driver(url):
 
     opts = Options()
     opts.add_argument("--disable-blink-features=AutomationControlled")
-    driver = webdriver.Chrome(".././chromedriver.exe", options=opts)
+    driver = webdriver.Chrome("./chromedriver.exe", options=opts)
     driver.get(url)
     return driver
 
